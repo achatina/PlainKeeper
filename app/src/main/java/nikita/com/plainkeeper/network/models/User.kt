@@ -4,6 +4,7 @@ data class User(
     val id: Int,
     val email: String,
     val username: String,
+    val token: String?,
     val wallets: List<Wallet>
 )
 

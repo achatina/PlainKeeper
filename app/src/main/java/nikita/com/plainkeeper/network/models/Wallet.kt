@@ -9,11 +9,18 @@ data class Wallet(
     val outcomes: List<Transaction>?
 )
 
+data class UpdateWallet(
+    val id: Int,
+    val owner_id: Int,
+    val title: String
+)
+
 data class Transaction(
     val id: Int,
     val wallet_id: Int,
     val owner_id: Int,
     val value: Double,
     val title: String,
-    val category: String
+    val category: String,
+    val date: Long
 )
